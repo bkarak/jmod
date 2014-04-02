@@ -7,6 +7,16 @@ J% (pronounced j-mod) is a DSL-aware (Domain-Specific Language) extension of the
 
 So far, it facilitates existing Java DSL APIs, like JDBC for SQL. But this is optional, a module can literally translate DSL code to the host language, since with J% any DSL can be easily integrated into the compiler infrastructure, act as a module and be initialized when needed.
 
+Features
+------
+
+* **Static typing** The compilation process is type-safe. The compiler is able to perform static typing in one or many DSLs. 
+* **DSL Syntax Validation** The DSL is syntactically checked at compile time and all errors are reported at compile-time.  
+* **DSL Syntax** Each hosted DSL retains its syntax. There is only a minor addition to each DSL grammar of each language to support type mapping with J%. 
+* **Modular Design** Developers can create their own DSLs module through a well-defined API. This way J% can include as many DSLs as needed. 
+* **Pragmatic** Many meta-programming and language extensions deal with language inter-mixture by sacrificing simplicity in the host-language syntax. Other approaches define new languages, which translate the DSLs to the host languages. J% is a pragmatic approach that extends a mainstream language, like Java, and its purpose is to achieve integration with elegance and usage of current DSL application library implementations.
+
+
 Usage
 -----
 J% consists of a compiler (<code>jmodc</code>), which can be used to compile the source code.
