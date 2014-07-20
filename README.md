@@ -5,7 +5,7 @@ Introduction
 -------
 J% (pronounced j-mod) is a DSL-aware (Domain-Specific Language) extension of the Java programming language. The prototype implementation consists of a preprocessor, which translates the J% source code to Java compatible code and finally compiles it, through <code>javac</code> to Java bytecode.
 
-So far, it facilitates existing Java DSL APIs, like JDBC for SQL. But this is optional, a module can literally translate DSL code to the host language, since with J% any DSL can be easily integrated into the compiler infrastructure, act as a module and be initialized when needed.
+So far, it facilitates existing Java DSL APIs, like JDBC for SQL. But this is optional, a module can literally translate DSL code to the host language, since with J% any DSL can be easily integrated into the compiler infrastructure, act as a module and be initialized when needed. For more information visit the [website](http://www.jmod-lang.org/).
 
 Features
 ------
